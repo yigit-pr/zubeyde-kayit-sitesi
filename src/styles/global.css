@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Blue replacement (#2F317B) */
+  --color-blue-50: color-mix(in srgb, #2F317B 5%, white);
+  --color-blue-100: color-mix(in srgb, #2F317B 10%, white);
+  --color-blue-200: color-mix(in srgb, #2F317B 25%, white);
+  --color-blue-300: color-mix(in srgb, #2F317B 40%, white);
+  --color-blue-400: color-mix(in srgb, #2F317B 60%, white);
+  --color-blue-500: color-mix(in srgb, #2F317B 80%, white);
+  --color-blue-600: color-mix(in srgb, #2F317B 90%, white);
+  --color-blue-700: color-mix(in srgb, #2F317B 95%, white);
+  --color-blue-800: color-mix(in srgb, #2F317B 98%, white);
+  --color-blue-900: #2F317B;
+  --color-blue-950: color-mix(in srgb, #2F317B 20%, black);
+
+  /* Brand Red replacement (#B31B26, mapped to amber) */
+  --color-amber-50: color-mix(in srgb, #B31B26 5%, white);
+  --color-amber-100: color-mix(in srgb, #B31B26 10%, white);
+  --color-amber-200: color-mix(in srgb, #B31B26 20%, white);
+  --color-amber-300: color-mix(in srgb, #B31B26 35%, white);
+  --color-amber-400: color-mix(in srgb, #B31B26 60%, white);
+  --color-amber-500: #B31B26;
+  --color-amber-600: color-mix(in srgb, #B31B26 15%, black);
+  --color-amber-700: color-mix(in srgb, #B31B26 30%, black);
+  --color-amber-800: color-mix(in srgb, #B31B26 45%, black);
+  --color-amber-900: color-mix(in srgb, #B31B26 60%, black);
+  --color-amber-950: color-mix(in srgb, #B31B26 75%, black);
+
+  --color-brand-blue: #2F317B;
+  --color-brand-amber: #B31B26;
+  --color-brand-amber-dark: color-mix(in srgb, #B31B26 15%, black);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans antialiased bg-white text-slate-900;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-extrabold tracking-tight;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-amber hover:bg-brand-amber-dark text-white font-bold py-4 px-8 rounded-xl text-lg transition-all shadow-md active:scale-95 inline-block text-center cursor-pointer;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all;
+  }
+}
