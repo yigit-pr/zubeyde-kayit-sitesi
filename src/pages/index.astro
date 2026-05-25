@@ -8,11 +8,11 @@ import "../styles/global.css";
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>
-            Gençlik Festivali ve Uçurtma Etkinliği | Zübeyde Hanım Eğitim Kurumları
+            Kurs Kayıt Formu | Zübeyde Hanım Eğitim Kurumları
         </title>
         <meta
             name="description"
-            content="Zübeyde Hanım Eğitim Kurumları Gençlik Festivali ve Uçurtma Etkinliği – 9 Mayıs 2026, Çiçekliköy Kampüsü. Ücretsiz katılım için hemen kayıt olun."
+            content="Zübeyde Hanım Eğitim Kurumları Robotik Kodlama, Piyano ve Tenis dersleri 2026 Yaz Dönemi Kayıtları başlamıştır. Kayıt formunu doldurarak hemen başvurun."
         />
 
         <!-- Google Fonts -->
@@ -43,7 +43,7 @@ import "../styles/global.css";
             }
         </style>
     </head>
-    <body class="bg-slate-50">
+    <body class="bg-slate-50 overflow-x-hidden">
         <!-- 1. Header (Minimalist + Socials) -->
         <header
             class="py-4 md:py-6 bg-white border-b border-slate-100 sticky top-0 z-50"
@@ -184,32 +184,42 @@ import "../styles/global.css";
                             <span
                                 class="inline-block px-4 py-1.5 bg-amber-100 text-amber-700 text-sm font-bold uppercase tracking-widest rounded-full mb-6"
                             >
-                                9 Mayıs Gençlik Festivali
+                                2026 Yaz Dönemi Kayıtları
                             </span>
                             <h1
                                 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-blue-900 leading-[1.2] mb-6 tracking-tight"
                             >
-                                Gençlik Festivali ve Uçurtma <br />
+                                Robotik Kodlama, Piyano ve <br />
+                                Tenis Derslerine <br />
                                 <span class="text-amber-500"
-                                    >Etkinliğine Davetlisiniz!</span
+                                    >Kayıt Başladı!</span
                                 >
                             </h1>
                             <p
                                 class="text-lg text-slate-600 mb-8 max-w-xl leading-relaxed"
                             >
-                                Zübeyde Hanım Eğitim Kurumları tarafından düzenlenen Gençlik Festivali ve Uçurtma Etkinliği, öğrencilerimizin baharın coşkusunu birlikte kutlamaları ve unutulmaz anılar biriktirmeleri için hazırlanmıştır. Bu özel günde müzik, dans, uçurtma uçurma ve renkli etkinliklerle dolu eğlenceli bir program sizleri bekliyor. Başvuru formunu doldurarak yerinizi ayırtabilirsiniz.
+                                Zübeyde Hanım Eğitim Kurumları olarak çocuklarınızın yeteneklerini keşfetmeleri ve geliştirmeleri için Robotik Kodlama, Piyano ve Tenis derslerimizle yeni dönem kayıtlarımız başlamıştır. Kayıt formunu doldurarak yerinizi ayırtabilirsiniz.
                             </p>
 
-                            <div class="relative max-w-lg mx-auto lg:mx-0">
+                            <div class="relative max-w-lg mx-auto lg:mx-0 w-full aspect-[4/3] rounded-[2.5rem] shadow-2xl border-4 border-white overflow-hidden group">
                                 <img
-                                    src="/images/ZH-Reklam-Post-1_2.jpg"
-                                    alt="Gençlik Festivali ve Uçurtma Etkinliği"
-                                    class="w-full h-auto rounded-[2.5rem] shadow-2xl border-4 border-white"
+                                    src="/images/hero-child.png"
+                                    alt="Robotik Kodlama, Piyano ve Tenis Eğitimi"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                 />
-                                <div
-                                    class="absolute -bottom-4 -right-4 w-24 h-24 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold text-center leading-tight shadow-lg transform rotate-12"
-                                >
-                                    Ücretsiz<br />Kayıt
+                                <div class="absolute inset-0 bg-gradient-to-t from-blue-900/40 to-transparent"></div>
+                                
+                                <!-- Floating Badges for Courses -->
+                                <div class="absolute bottom-4 left-4 right-4 flex justify-between gap-2">
+                                    <span class="px-3 py-1.5 bg-white/95 backdrop-blur-md text-blue-900 text-xs font-bold rounded-full shadow-md flex items-center gap-1.5">
+                                        🤖 Kodlama
+                                    </span>
+                                    <span class="px-3 py-1.5 bg-white/95 backdrop-blur-md text-blue-900 text-xs font-bold rounded-full shadow-md flex items-center gap-1.5">
+                                        🎹 Piyano
+                                    </span>
+                                    <span class="px-3 py-1.5 bg-white/95 backdrop-blur-md text-blue-900 text-xs font-bold rounded-full shadow-md flex items-center gap-1.5">
+                                        🎾 Tenis
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -223,10 +233,10 @@ import "../styles/global.css";
                                     <h2
                                         class="text-2xl font-bold text-blue-900 mb-2"
                                     >
-                                        Hemen Ön Kayıt Oluşturun
+                                        Hemen Kayıt Oluşturun
                                     </h2>
                                     <p class="text-slate-500">
-                                        Sadece 1 dakikada kaydınızı tamamlayın.
+                                        Birkaç adımda kaydınızı tamamlayın.
                                     </p>
                                 </div>
 
@@ -262,12 +272,58 @@ import "../styles/global.css";
                                         />
                                     </div>
 
+                                    <div>
+                                        <label
+                                            class="block text-sm font-semibold text-slate-700 mb-1.5 ml-1"
+                                            >Öğrenci Adı</label
+                                        >
+                                        <input
+                                            type="text"
+                                            name="student_name"
+                                            placeholder="Öğrencinin adı ve soyadı"
+                                            class="input-field"
+                                            required
+                                        />
+                                    </div>
+
+                                    <div>
+                                        <label
+                                            class="block text-sm font-semibold text-slate-700 mb-1.5 ml-1"
+                                            >Öğrenci Yaşı</label
+                                        >
+                                        <input
+                                            type="number"
+                                            name="student_age"
+                                            placeholder="Öğrencinin yaşı"
+                                            class="input-field"
+                                            required
+                                        />
+                                    </div>
+
+                                    <div>
+                                        <label
+                                            class="block text-sm font-semibold text-slate-700 mb-1.5 ml-1"
+                                            >İlgilenilen Kurs</label
+                                        >
+                                        <select
+                                            name="course"
+                                            class="input-field bg-white"
+                                            required
+                                        >
+                                            <option value="" disabled selected>Seçiniz...</option>
+                                            <option value="Robotik Kodlama">Robotik Kodlama</option>
+                                            <option value="Piyano">Piyano</option>
+                                            <option value="Tenis">Tenis</option>
+                                            <option value="Birden Fazla Kurs">Birden Fazla Kurs</option>
+                                        </select>
+                                    </div>
+
                                     <button
                                         type="submit"
                                         id="submit-button"
                                         class="btn-primary w-full mt-2"
                                     >
-                                        Ücretsiz Kayıt Ol
+                                        Kayıt Ol
                                     </button>
 
                                     <p
@@ -279,10 +335,7 @@ import "../styles/global.css";
                                     <p
                                         class="text-center text-[10px] text-slate-400 mt-4 leading-tight"
                                     >
-                                        Kişisel verileriniz KVKK kapsamında
-                                        korunmaktadır. Formu doldurarak iletişim
-                                        bilgilerinizin bilgilendirme amacıyla
-                                        kullanılmasını kabul etmiş olursunuz.
+                                        Kayıt formunu dolduran velilere kurs detayları ve başlangıç tarihleri iletişim bilgileri aracılığıyla iletilecektir.
                                     </p>
                                 </form>
                             </div>
@@ -296,94 +349,60 @@ import "../styles/global.css";
                 <div
                     class="bg-white rounded-3xl shadow-xl border border-slate-100 p-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-slate-100"
                 >
-                    <div class="px-2">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="text-amber-500 mx-auto mb-3"
-                            ><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path
-                                d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path
-                                d="M4 22h16"></path><path
-                                d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"
-                            ></path><path
-                                d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"
-                            ></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"
-                            ></path></svg
-                        >
+                    <div class="px-2 flex flex-col items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-500 mx-auto mb-3 w-8 h-8">
+                            <path d="M12 8V4H8"></path>
+                            <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+                            <path d="M9 12h.01"></path>
+                            <path d="M15 12h.01"></path>
+                            <path d="M19 16h2"></path>
+                            <path d="M3 16h2"></path>
+                            <path d="M8 16h8"></path>
+                            <path d="M12 2v2"></path>
+                        </svg>
                         <p
                             class="text-[10px] text-slate-500 uppercase font-bold tracking-wider mb-1"
                         >
-                            Etkinlik Adı
+                            KURS
                         </p>
-                        <p
-                            class="font-bold text-blue-900 border-b-2 border-amber-400 inline-block pb-1"
-                        >
-                            Gençlik Festivali
+                        <p class="font-bold text-blue-900 text-base">
+                            Robotik Kodlama
                         </p>
                     </div>
-                    <div class="px-2 pt-6 md:pt-0">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="text-amber-500 mx-auto mb-3"
-                            ><rect
-                                width="18"
-                                height="18"
-                                x="3"
-                                y="4"
-                                rx="2"
-                                ry="2"></rect><line
-                                x1="16"
-                                x2="16"
-                                y1="2"
-                                y2="6"></line><line x1="8" x2="8" y1="2" y2="6"
-                            ></line><line x1="3" x2="21" y1="10" y2="10"
-                            ></line></svg
-                        >
+                    <div class="px-2 pt-6 md:pt-0 flex flex-col items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-500 mx-auto mb-3 w-8 h-8">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="M6 4v16"></path>
+                            <path d="M10 4v16"></path>
+                            <path d="M14 4v16"></path>
+                            <path d="M18 4v16"></path>
+                            <path d="M8 4v10h1.5V4z" fill="currentColor"></path>
+                            <path d="M12 4v10h1.5V4z" fill="currentColor"></path>
+                            <path d="M16 4v10h1.5V4z" fill="currentColor"></path>
+                        </svg>
                         <p
                             class="text-[10px] text-slate-500 uppercase font-bold tracking-wider mb-1"
                         >
-                            Tarih
+                            KURS
                         </p>
-                        <p class="font-bold text-blue-900 text-sm">9 Mayıs</p>
+                        <p class="font-bold text-blue-900 text-base">
+                            Piyano
+                        </p>
                     </div>
-                    <div class="px-2 pt-6 md:pt-0">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="text-amber-500 mx-auto mb-3"
-                            ><path
-                                d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"
-                            ></path><circle cx="12" cy="10" r="3"></circle></svg
-                        >
+                    <div class="px-2 pt-6 md:pt-0 flex flex-col items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-500 mx-auto mb-3 w-8 h-8">
+                            <ellipse cx="14.5" cy="9.5" rx="5.5" ry="5.5" transform="rotate(-45 14.5 9.5)"></ellipse>
+                            <line x1="10.5" y1="13.5" x2="4.5" y2="19.5"></line>
+                            <line x1="3.5" y1="20.5" x2="5.5" y2="18.5" stroke-width="3"></line>
+                            <circle cx="6" cy="8" r="2" fill="currentColor" class="text-blue-900"></circle>
+                        </svg>
                         <p
                             class="text-[10px] text-slate-500 uppercase font-bold tracking-wider mb-1"
                         >
-                            Yer
+                            KURS
                         </p>
-                        <p class="font-bold text-blue-900 text-sm">
-                            Zübeyde Hanım Çiçekliköy Kampüsü
+                        <p class="font-bold text-blue-900 text-base">
+                            Tenis
                         </p>
                     </div>
                 </div>
@@ -396,37 +415,54 @@ import "../styles/global.css";
                         <h2
                             class="text-3xl md:text-5xl font-extrabold text-blue-900 mb-4"
                         >
-                            Gençlik Festivali Nedir, Neler Var?
+                            Kurslarımız Hakkında
                         </h2>
                         <div class="w-24 h-2 bg-amber-500 mx-auto rounded-full">
                         </div>
                     </div>
 
                     <div class="space-y-16">
-                        <div
-                            class="grid md:grid-cols-12 gap-10 items-stretch bg-white p-6 md:p-10 rounded-[2.5rem] shadow-2xl shadow-blue-900/5 border border-slate-100 overflow-hidden"
-                        >
-                            <div class="md:col-span-5 h-full relative">
-                                <img
-                                    src="/images/ciceklikoy.webp"
-                                    alt="Gençlik Festivali Nedir?"
-                                    class="w-full h-full object-cover rounded-2xl shadow-md border border-slate-200"
-                                />
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <!-- Course Card 1: Robotik Kodlama -->
+                            <div class="bg-white rounded-[2.5rem] shadow-xl shadow-blue-900/5 border border-slate-100 overflow-hidden flex flex-col hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 group">
+                                <div class="aspect-[4/3] w-full relative overflow-hidden">
+                                    <img src="/images/kutucuk 1.jpg" alt="Robotik Kodlama" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                    <div class="absolute top-4 left-4 bg-amber-500 text-white w-10 h-10 rounded-full flex items-center justify-center text-lg font-bold shadow-md">🤖</div>
+                                </div>
+                                <div class="p-6 md:p-8 flex flex-col flex-grow">
+                                    <h3 class="text-xl md:text-2xl font-bold text-blue-900 mb-3">Robotik Kodlama</h3>
+                                    <p class="text-slate-600 leading-relaxed text-sm md:text-base flex-grow">
+                                        Öğrencilerimiz robotik kodlama derslerinde algoritma geliştirme, problem çözme ve yaratıcı düşünme becerilerini eğlenceli projelerle kazanır. Teknolojinin temellerini küçük yaşta öğrenmek için ideal bir program.
+                                    </p>
+                                </div>
                             </div>
-                            <div
-                                class="md:col-span-7 flex flex-col justify-center py-4 pr-4 text-slate-700"
-                            >
-                                <h3
-                                    class="text-3xl font-bold text-blue-900 mb-6"
-                                >
-                                    Gençlik Festivali Nedir?
-                                </h3>
-                                <p class="text-lg leading-relaxed mb-4">
-                                    Gençlik Festivali ve Uçurtma Etkinliği, öğrencilerimizin baharı coşkuyla karşıladığı, renk ve eğlencenin bir arada yaşandığı özel bir kutlama etkinliğidir. Etkinlik boyunca öğrenciler birbirinden eğlenceli aktivitelere katılarak arkadaşlarıyla unutulmaz anılar yaşar. Bu özel günde aileleri de yanlarında olacak!
-                                </p>
-                                <p class="text-lg leading-relaxed">
-                                    Festival süresince çeşitli sahnelerde gösteriler, atölye çalışmaları ve açık alan aktiviteleri gerçekleştirilecektir. Öğrenciler ilgi alanlarına göre istedikleri aktivitelere serbestçe katılabilecektir.
-                                </p>
+                            
+                            <!-- Course Card 2: Piyano -->
+                            <div class="bg-white rounded-[2.5rem] shadow-xl shadow-blue-900/5 border border-slate-100 overflow-hidden flex flex-col hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 group">
+                                <div class="aspect-[4/3] w-full relative overflow-hidden">
+                                    <img src="/images/kutucuk 2.jpg" alt="Piyano" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                    <div class="absolute top-4 left-4 bg-blue-900 text-white w-10 h-10 rounded-full flex items-center justify-center text-lg font-bold shadow-md">🎹</div>
+                                </div>
+                                <div class="p-6 md:p-8 flex flex-col flex-grow">
+                                    <h3 class="text-xl md:text-2xl font-bold text-blue-900 mb-3">Piyano</h3>
+                                    <p class="text-slate-600 leading-relaxed text-sm md:text-base flex-grow">
+                                        Müziğin evrensel diliyle buluşan öğrencilerimiz, piyano derslerinde nota okuma, ritim ve müzikal ifade yeteneklerini geliştirir. Başlangıç seviyesinden ileri seviyeye kadar her öğrenciye uygun program.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Course Card 3: Tenis -->
+                            <div class="bg-white rounded-[2.5rem] shadow-xl shadow-blue-900/5 border border-slate-100 overflow-hidden flex flex-col hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 group">
+                                <div class="aspect-[4/3] w-full relative overflow-hidden">
+                                    <img src="/images/kutucuk 3.jpg" alt="Tenis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                    <div class="absolute top-4 left-4 bg-amber-500 text-white w-10 h-10 rounded-full flex items-center justify-center text-lg font-bold shadow-md">🎾</div>
+                                </div>
+                                <div class="p-6 md:p-8 flex flex-col flex-grow">
+                                    <h3 class="text-xl md:text-2xl font-bold text-blue-900 mb-3">Tenis</h3>
+                                    <p class="text-slate-600 leading-relaxed text-sm md:text-base flex-grow">
+                                        Tenis derslerimizde öğrenciler temel vuruş tekniklerini, oyun kurallarını ve sportif disiplini deneyimli antrenörler eşliğinde öğrenir. Çiçekliköy Kampüsü'nün açık kortlarında uygulamalı eğitim.
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
@@ -439,62 +475,60 @@ import "../styles/global.css";
                                 <h3
                                     class="text-3xl font-bold text-blue-900 mb-6"
                                 >
-                                    Festivalde Neler Var?
+                                    Kurslarımızda Neler Kazanacaksınız?
                                 </h3>
-                                <p class="text-lg leading-relaxed mb-4">
-                                    Festivalimizde aşağıdaki etkinlikler sizleri bekliyor:
+                                <p class="text-lg leading-relaxed text-slate-600 mb-2">
+                                    Kurslarımız süresince öğrencilerimizin kazanacağı temel yetkinlikler:
                                 </p>
-                                <ul
-                                    class="grid grid-cols-2 gap-x-3 gap-y-1 mb-6 font-semibold text-blue-900"
-                                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; font-size: 0.85rem;"
-                                >
-                                    <li class="flex items-center gap-2 py-[2px] border-b border-slate-50">
-                                        <span class="text-base">🎵</span> Canlı Müzik ve Dinleti
-                                    </li>
-                                    <li class="flex items-center gap-2 py-[2px] border-b border-slate-50">
-                                        <span class="text-base">🎤</span> Açık Mikrofon (Karaoke)
-                                    </li>
-                                    <li class="flex items-center gap-2 py-[2px] border-b border-slate-50">
-                                        <span class="text-base">🎁</span> Sürpriz Hediyeler
-                                    </li>
-                                    <li class="flex items-center gap-2 py-[2px] border-b border-slate-50">
-                                        <span class="text-base">🎰</span> Çekilişler
-                                    </li>
-                                    <li class="flex items-center gap-2 py-[2px] border-b border-slate-50">
-                                        <span class="text-base">📦</span> OSINIF Full Paket Hediyeleri
-                                    </li>
-                                    <li class="flex items-center gap-2 py-[2px] border-b border-slate-50">
-                                        <span class="text-base">🎨</span> Graffiti Alanı
-                                    </li>
-                                    <li class="flex items-center gap-2 py-[2px] border-b border-slate-50">
-                                        <span class="text-base">💥</span> Toz Boya Etkinliği
-                                    </li>
-                                    <li class="flex items-center gap-2 py-[2px] border-b border-slate-50">
-                                        <span class="text-base">🏓</span> Masa Tenisi Turnuvası
-                                    </li>
-                                    <li class="flex items-center gap-2 py-[2px] border-b border-slate-50">
-                                        <span class="text-base">🎯</span> Dart Turnuvası
-                                    </li>
-                                    <li class="flex items-center gap-2 py-[2px] border-b border-slate-50">
-                                        <span class="text-base">💃</span> Dans Yarışması
-                                    </li>
-                                    <li class="flex items-center gap-2 py-[2px] border-b border-slate-50">
-                                        <span class="text-base">🃏</span> Tabu Yarışması
-                                    </li>
-                                    <li class="flex items-center gap-2 py-[2px] border-b border-slate-50">
-                                        <span class="text-base">🪵</span> Jenga Turnuvası
-                                    </li>
-                                    <li class="flex items-center gap-2 py-[2px] border-b border-slate-50 col-span-2">
-                                        <span class="text-base">🪁</span> Uçurtmanı Getir, Birlikte Yükselelim Etkinliği
-                                    </li>
-                                </ul>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm font-semibold text-blue-900 mt-4">
+                                    <ul class="space-y-3">
+                                        <li class="flex items-center gap-2 pb-2 border-b border-slate-50">
+                                            <span class="text-amber-500 font-bold">✦</span> Robotik Kodlama: Algoritma ve Problem Çözme
+                                        </li>
+                                        <li class="flex items-center gap-2 pb-2 border-b border-slate-50">
+                                            <span class="text-amber-500 font-bold">✦</span> Robotik Kodlama: Proje Tabanlı Öğrenme
+                                        </li>
+                                        <li class="flex items-center gap-2 pb-2 border-b border-slate-50">
+                                            <span class="text-amber-500 font-bold">✦</span> Robotik Kodlama: Takım Çalışması
+                                        </li>
+                                        <li class="flex items-center gap-2 pb-2 border-b border-slate-50">
+                                            <span class="text-amber-500 font-bold">✦</span> Piyano: Nota Okuma ve Teori
+                                        </li>
+                                        <li class="flex items-center gap-2 pb-2 border-b border-slate-50">
+                                            <span class="text-amber-500 font-bold">✦</span> Piyano: Müzikal İfade ve Ritim
+                                        </li>
+                                        <li class="flex items-center gap-2 pb-2 border-b border-slate-50">
+                                            <span class="text-amber-500 font-bold">✦</span> Piyano: Sahne Performansı
+                                        </li>
+                                    </ul>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-center gap-2 pb-2 border-b border-slate-50">
+                                            <span class="text-amber-500 font-bold">✦</span> Tenis: Temel Vuruş Teknikleri
+                                        </li>
+                                        <li class="flex items-center gap-2 pb-2 border-b border-slate-50">
+                                            <span class="text-amber-500 font-bold">✦</span> Tenis: Oyun Kuralları ve Taktik
+                                        </li>
+                                        <li class="flex items-center gap-2 pb-2 border-b border-slate-50">
+                                            <span class="text-amber-500 font-bold">✦</span> Tenis: Sportif Disiplin ve Özgüven
+                                        </li>
+                                        <li class="flex items-center gap-2 pb-2 border-b border-slate-50">
+                                            <span class="text-amber-500 font-bold">✦</span> Tüm Kurslar: Sertifika
+                                        </li>
+                                        <li class="flex items-center gap-2 pb-2 border-b border-slate-50">
+                                            <span class="text-amber-500 font-bold">✦</span> Tüm Kurslar: Uzman Eğitmenler
+                                        </li>
+                                        <li class="flex items-center gap-2 pb-2 border-b border-slate-50">
+                                            <span class="text-amber-500 font-bold">✦</span> Tüm Kurslar: Küçük Gruplar
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <div
-                                class="md:col-span-5 md:order-2 order-1 h-full relative"
+                                class="md:col-span-5 md:order-2 order-1 aspect-[4/3] md:aspect-auto md:h-full min-h-[250px] relative"
                             >
                                 <img
-                                    src="/images/16639.jpg"
-                                    alt="Festivalde Neler Var?"
+                                    src="/images/ciceklikoy.webp"
+                                    alt="Zübeyde Hanım Kampüsü"
                                     class="w-full h-full object-cover rounded-2xl shadow-md border border-slate-200"
                                 />
                             </div>
@@ -669,11 +703,10 @@ import "../styles/global.css";
                 >
             </div>
             <h3 class="text-4xl font-extrabold text-blue-900 mb-4">
-                Etkinlik Detayları
+                Kurs Detayları
             </h3>
             <p class="text-xl text-slate-600 max-w-2xl leading-relaxed">
-                Etkinlik detayları, takvim ve kampüs bilgilerimize buradan
-                ulaşabilirsiniz.
+                Kurs detayları, takvim ve kampüs bilgilerimize buradan ulaşabilirsiniz.
             </p>
         </div>
 
@@ -716,49 +749,49 @@ import "../styles/global.css";
                 </p>
             </div>
 
-            <!-- Yarışma Takvimi -->
+            <!-- Kurs Takvimi -->
             <div
                 class="lg:col-span-2 bg-white p-8 md:p-10 rounded-[2rem] shadow-xl shadow-blue-900/5 border border-slate-100"
             >
                 <h4
                     class="text-2xl font-bold text-blue-900 mb-8 border-b border-slate-100 pb-4"
                 >
-                    Etkinlik Takvimi
+                    Kurs Takvimi
                 </h4>
 
                 <div class="grid md:grid-cols-2 gap-12">
-                    <!-- Etkinlik -->
+                    <!-- Kayıt Dönemi -->
                     <div class="space-y-8">
                         <div class="flex items-start gap-5">
                             <div class="text-3xl">📅</div>
                             <div>
                                 <span
                                     class="block text-amber-600 font-bold text-xs uppercase tracking-widest mb-1"
-                                    >Etkinlik</span
+                                    >KAYIT DÖNEMİ</span
                                 >
                                 <span
                                     class="block text-xl font-bold text-blue-900"
-                                    >9 Mayıs 2026</span
+                                    >2026</span
                                 >
                                 <span class="text-slate-500 font-medium"
-                                    >Saat 13:00</span
+                                    >Kayıtlar devam ediyor</span
                                 >
                             </div>
                         </div>
                     </div>
 
-                    <!-- Önemli Tarihler -->
+                    <!-- Kurs Detayları -->
                     <div class="space-y-8">
                         <div class="flex items-start gap-5">
                             <div class="text-3xl">🎁</div>
                             <div>
                                 <span
                                     class="block text-blue-600 font-bold text-xs uppercase tracking-widest mb-1"
-                                    >Etkinlik Detayları</span
+                                    >Kurs Detayları</span
                                 >
                                 <span
                                     class="block text-sm font-bold text-blue-900 leading-tight"
-                                    >Etkinliklerin gerçekleşme saatleri gün içerisinde duyurulacaktır.</span
+                                    >Kurs günleri ve saatleri kayıt sonrasında öğrenci programına göre iletilecektir.</span
                                 >
                             </div>
                         </div>
@@ -782,7 +815,7 @@ import "../styles/global.css";
             />
         </div>
         <p class="text-slate-500 text-sm mb-4">
-            © 2024 Zübeyde Hanım Eğitim Kurumları. Tüm hakları saklıdır.
+            © 2026 Zübeyde Hanım Eğitim Kurumları. Tüm hakları saklıdır.
         </p>
         <div class="flex flex-wrap justify-center gap-6 text-sm">
             <a
@@ -842,7 +875,7 @@ import "../styles/global.css";
                 );
                 form.reset();
                 submitButton.disabled = false;
-                submitButton.textContent = "Ücretsiz Kayıt Ol";
+                submitButton.textContent = "Kayıt Ol";
 
                 // 3 saniye sonra mesajı gizle
                 setTimeout(() => {
