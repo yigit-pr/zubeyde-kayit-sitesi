@@ -12,7 +12,7 @@ import "../styles/global.css";
         </title>
         <meta
             name="description"
-            content="Zübeyde Hanım Eğitim Kurumları Robotik Kodlama, Piyano ve Tenis dersleri 2026 Yaz Dönemi Kayıtları başlamıştır. Kayıt formunu doldurarak hemen başvurun."
+            content="Zübeyde Hanım Eğitim Kurumları Robotik Kodlama, Piyano, Tenis ve Satranç dersleri 2026 Yaz Dönemi Kayıtları başlamıştır. Kayıt formunu doldurarak hemen başvurun."
         />
 
         <!-- Google Fonts -->
@@ -189,8 +189,8 @@ import "../styles/global.css";
                             <h1
                                 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-blue-900 leading-[1.2] mb-6 tracking-tight"
                             >
-                                Robotik Kodlama, Piyano ve <br />
-                                Tenis Derslerine <br />
+                                Robotik Kodlama, Piyano, <br />
+                                Tenis ve Satranç Derslerine <br />
                                 <span class="text-amber-500"
                                     >Kayıt Başladı!</span
                                 >
@@ -198,19 +198,19 @@ import "../styles/global.css";
                             <p
                                 class="text-lg text-slate-600 mb-8 max-w-xl leading-relaxed"
                             >
-                                Zübeyde Hanım Eğitim Kurumları olarak çocuklarınızın yeteneklerini keşfetmeleri ve geliştirmeleri için Robotik Kodlama, Piyano ve Tenis derslerimizle yeni dönem kayıtlarımız başlamıştır. Kayıt formunu doldurarak yerinizi ayırtabilirsiniz.
+                                Zübeyde Hanım Eğitim Kurumları olarak çocuklarınızın yeteneklerini keşfetmeleri ve geliştirmeleri için Robotik Kodlama, Piyano, Tenis ve Satranç derslerimizle yeni dönem kayıtlarımız başlamıştır. Kayıt formunu doldurarak yerinizi ayırtabilirsiniz.
                             </p>
 
                             <div class="relative max-w-lg mx-auto lg:mx-0 w-full aspect-[4/3] rounded-[2.5rem] shadow-2xl border-4 border-white overflow-hidden group">
                                 <img
                                     src="/images/hero-child.png"
-                                    alt="Robotik Kodlama, Piyano ve Tenis Eğitimi"
+                                    alt="Robotik Kodlama, Piyano, Tenis ve Satranç Eğitimi"
                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                 />
                                 <div class="absolute inset-0 bg-gradient-to-t from-blue-900/40 to-transparent"></div>
                                 
                                 <!-- Floating Badges for Courses -->
-                                <div class="absolute bottom-4 left-4 right-4 flex justify-between gap-2">
+                                <div class="absolute bottom-4 left-4 right-4 flex flex-wrap justify-center gap-2">
                                     <span class="px-3 py-1.5 bg-white/95 backdrop-blur-md text-blue-900 text-xs font-bold rounded-full shadow-md flex items-center gap-1.5">
                                         🤖 Kodlama
                                     </span>
@@ -219,6 +219,9 @@ import "../styles/global.css";
                                     </span>
                                     <span class="px-3 py-1.5 bg-white/95 backdrop-blur-md text-blue-900 text-xs font-bold rounded-full shadow-md flex items-center gap-1.5">
                                         🎾 Tenis
+                                    </span>
+                                    <span class="px-3 py-1.5 bg-white/95 backdrop-blur-md text-blue-900 text-xs font-bold rounded-full shadow-md flex items-center gap-1.5">
+                                        ♟️ Satranç
                                     </span>
                                 </div>
                             </div>
@@ -314,6 +317,7 @@ import "../styles/global.css";
                                             <option value="Robotik Kodlama">Robotik Kodlama</option>
                                             <option value="Piyano">Piyano</option>
                                             <option value="Tenis">Tenis</option>
+                                            <option value="Satranç">Satranç</option>
                                             <option value="Birden Fazla Kurs">Birden Fazla Kurs</option>
                                         </select>
                                     </div>
@@ -347,7 +351,7 @@ import "../styles/global.css";
             <!-- 3. Quick Info Strip -->
             <div class="max-w-5xl mx-auto px-4 -mt-10 relative z-20">
                 <div
-                    class="bg-white rounded-3xl shadow-xl border border-slate-100 p-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-slate-100"
+                    class="bg-white rounded-3xl shadow-xl border border-slate-100 p-8 grid grid-cols-1 md:grid-cols-4 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-slate-100"
                 >
                     <div class="px-2 flex flex-col items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-500 mx-auto mb-3 w-8 h-8">
@@ -405,6 +409,32 @@ import "../styles/global.css";
                             Tenis
                         </p>
                     </div>
+                    <div class="px-2 pt-6 md:pt-0 flex flex-col items-center">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="text-amber-500 mx-auto mb-3 w-8 h-8"
+                        >
+                            <path d="M5 20a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1z" />
+                            <path d="M16.5 18c1-2 2.5-5 2.5-9a7 7 0 0 0-7-7H6.635a1 1 0 0 0-.768 1.64L7 5l-2.32 5.802a2 2 0 0 0 .95 2.526l2.87 1.456" />
+                            <path d="m15 5 1.425-1.425" />
+                            <path d="m17 8 1.53-1.53" />
+                            <path d="M9.713 12.185 7 18" />
+                        </svg>
+                        <p
+                            class="text-[10px] text-slate-500 uppercase font-bold tracking-wider mb-1"
+                        >
+                            KURS
+                        </p>
+                        <p class="font-bold text-blue-900 text-base">
+                            Satranç
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -422,7 +452,7 @@ import "../styles/global.css";
                     </div>
 
                     <div class="space-y-16">
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                             <!-- Course Card 1: Robotik Kodlama -->
                             <div class="bg-white rounded-[2.5rem] shadow-xl shadow-blue-900/5 border border-slate-100 overflow-hidden flex flex-col hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 group">
                                 <div class="aspect-[4/3] w-full relative overflow-hidden">
@@ -432,7 +462,7 @@ import "../styles/global.css";
                                 <div class="p-6 md:p-8 flex flex-col flex-grow">
                                     <h3 class="text-xl md:text-2xl font-bold text-blue-900 mb-3">Robotik Kodlama</h3>
                                     <p class="text-slate-600 leading-relaxed text-sm md:text-base flex-grow">
-                                        Öğrencilerimiz robotik kodlama derslerinde algoritma geliştirme, problem çözme ve yaratıcı düşünme becerilerini eğlenceli projelerle kazanır. Teknolojinin temellerini küçük yaşta öğrenmek için ideal bir program.
+                                        Öğrencilerimiz robotik kodlama derslerinde algoritma geliştirme, problem çözme and yaratıcı düşünme becerilerini eğlenceli projelerle kazanır. Teknolojinin temellerini küçük yaşta öğrenmek için ideal bir program.
                                     </p>
                                 </div>
                             </div>
@@ -461,6 +491,20 @@ import "../styles/global.css";
                                     <h3 class="text-xl md:text-2xl font-bold text-blue-900 mb-3">Tenis</h3>
                                     <p class="text-slate-600 leading-relaxed text-sm md:text-base flex-grow">
                                         Tenis derslerimizde öğrenciler temel vuruş tekniklerini, oyun kurallarını ve sportif disiplini deneyimli antrenörler eşliğinde öğrenir. Çiçekliköy Kampüsü'nün açık kortlarında uygulamalı eğitim.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Course Card 4: Satranç -->
+                            <div class="bg-white rounded-[2.5rem] shadow-xl shadow-blue-900/5 border border-slate-100 overflow-hidden flex flex-col hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 group">
+                                <div class="aspect-[4/3] w-full relative overflow-hidden">
+                                    <img src="/images/kutucuk 4.png" alt="Satranç" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                    <div class="absolute top-4 left-4 bg-blue-900 text-white w-10 h-10 rounded-full flex items-center justify-center text-lg font-bold shadow-md">♟️</div>
+                                </div>
+                                <div class="p-6 md:p-8 flex flex-col flex-grow">
+                                    <h3 class="text-xl md:text-2xl font-bold text-blue-900 mb-3">Satranç</h3>
+                                    <p class="text-slate-600 leading-relaxed text-sm md:text-base flex-grow">
+                                        Satranç derslerimizde öğrencilerimiz stratejik düşünme, odaklanma ve planlama becerilerini geliştirir. Zihinsel gelişim ve analitik düşünme yeteneği kazandıran, başarı odaklı bir eğitim programı.
                                     </p>
                                 </div>
                             </div>
@@ -500,8 +544,17 @@ import "../styles/global.css";
                                         <li class="flex items-center gap-2 pb-2 border-b border-slate-50">
                                             <span class="text-amber-500 font-bold">✦</span> Piyano: Sahne Performansı
                                         </li>
+                                        <li class="flex items-center gap-2 pb-2 border-b border-slate-50">
+                                            <span class="text-amber-500 font-bold">✦</span> Satranç: Stratejik ve Analitik Düşünme
+                                        </li>
+                                        <li class="flex items-center gap-2 pb-2 border-b border-slate-50">
+                                            <span class="text-amber-500 font-bold">✦</span> Satranç: Konsantrasyon ve Odaklanma
+                                        </li>
                                     </ul>
                                     <ul class="space-y-3">
+                                        <li class="flex items-center gap-2 pb-2 border-b border-slate-50">
+                                            <span class="text-amber-500 font-bold">✦</span> Satranç: Problem Çözme ve Sabır
+                                        </li>
                                         <li class="flex items-center gap-2 pb-2 border-b border-slate-50">
                                             <span class="text-amber-500 font-bold">✦</span> Tenis: Temel Vuruş Teknikleri
                                         </li>
